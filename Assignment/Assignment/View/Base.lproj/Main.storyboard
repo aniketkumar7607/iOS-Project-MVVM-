@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXL-sU-I2j">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="0.42352941179999998" green="0.31372549020000001" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="X62-TE-ngb">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ouw-Aa-bZs"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="sOE-Gr-h6A"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MXL-sU-I2j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0cd-9N-uMm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MXL-sU-I2j" secondAttribute="bottom" id="2Ve-kY-CMX"/>
+                            <constraint firstItem="MXL-sU-I2j" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7lX-QT-4u5"/>
+                            <constraint firstItem="MXL-sU-I2j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9gV-UI-HGK"/>
+                            <constraint firstItem="MXL-sU-I2j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CEm-ij-nsW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MXL-sU-I2j" secondAttribute="trailing" id="asb-r9-rmm"/>
+                            <constraint firstItem="MXL-sU-I2j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kBT-K5-4tA"/>
+                            <constraint firstItem="MXL-sU-I2j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pXN-s0-a2b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mediaImagesCollection" destination="MXL-sU-I2j" id="T0c-Fe-h2O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
